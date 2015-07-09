@@ -12,9 +12,9 @@ use Benchmark::Command;
 Benchmark::Command::run(
     undef,
     {
-        'pause-datapacked (-v)' => ["pause", "-v"],
-        'pause-unpacked   (-v)' => ["pause-unpacked", "-v"],
-        'pause-fatpacked  (-v)' => ["pause-fatpacked", "-v"],
+        'pause (datapacked) (-v)' => ["pause", "-v"],
+        'pause-unpacked     (-v)' => ["pause-unpacked", "-v"],
+        'pause-fatpacked    (-v)' => ["pause-fatpacked", "-v"],
     },
     {
         quiet => 1,
