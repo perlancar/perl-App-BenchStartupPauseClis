@@ -16,6 +16,9 @@ Benchmark::Command::run(
         'pause-unpacked   (-v)' => ["pause-unpacked", "-v"],
         'pause-fatpacked  (-v)' => ["pause-fatpacked", "-v"],
     },
+    {
+        quiet => 1,
+    },
 );
 
 # ABSTRACT: Benchmark startup time of pause CLI's
