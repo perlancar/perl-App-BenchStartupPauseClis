@@ -1,0 +1,33 @@
+#!perl
+
+# DATE
+# VERSION
+
+use 5.010001;
+use strict;
+use warnings;
+
+use Benchmark::Command;
+
+Benchmark::Command::run(
+    undef,
+    {
+        'pause-datapacked (-v)' => ["pause", "-v"],
+        'pause-unpacked   (-v)' => ["pause-unpacked", "-v"],
+        'pause-fatpacked  (-v)' => ["pause-fatpacked", "-v"],
+    },
+);
+
+# ABSTRACT: Benchmark startup time of pause CLI's
+# PODNAME:
+
+=head1 SYNOPSIS
+
+ % bench-startup-pause-clis
+
+Sample output:
+
+# COMMAND: perl bin/bench-startup-pause-clis
+
+
+=head1 SEE ALSO
